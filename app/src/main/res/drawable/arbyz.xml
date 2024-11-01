@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Основной фон (прозрачный) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <!-- Тень снизу -->
+    <item
+        android:bottom="4dp"
+        android:left="4dp"
+        android:right="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#55000000"
+                android:endColor="#33000000"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+    <!-- Тень справа -->
+    <item
+        android:right="4dp"
+        android:top="4dp"
+        android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#55000000"
+                android:endColor="#33000000"
+                android:angle="180"/>
+        </shape>
+    </item>
+
+    <!-- Тень слева -->
+    <item
+        android:left="4dp"
+        android:top="4dp"
+        android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#33000000"
+                android:endColor="#55000000"
+                android:angle="0"/>
+        </shape>
+    </item>
+</selector>
